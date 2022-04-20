@@ -1,0 +1,11 @@
+address {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.comment {
+    text-align: left;
+    background-color: lightgray;
+    margin: 5px;
+}

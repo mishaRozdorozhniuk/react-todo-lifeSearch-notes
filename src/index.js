@@ -1,17 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import { ReactRouters } from './routs/Routes';
+import { AuthContext } from '../src/context/index';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+const Main = () => {
+    const [isAuth, setIsAuth] = useState(false)
+    return ( <
+        AuthContext.Provider value = {
+            {
+                isAuth,
+                setIsAuth
+            }
+        } >
+        <
+        ReactRouters / >
+        <
+        /AuthContext.Provider>
+    )
+}
+
+ReactDOM.render( <
+    Main / > ,
+    document.getElementById('root')
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
