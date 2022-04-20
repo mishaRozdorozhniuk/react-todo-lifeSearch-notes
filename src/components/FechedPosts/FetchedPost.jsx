@@ -1,31 +1,19 @@
-import React, {useState, useEffect, useCallback} from 'react'
+import React, {useState} from 'react'
 import { useParams } from 'react-router-dom';
 import './FetchedPost.css'
-import axios from 'axios';
+import PostServise from '../../API/PostServise'
+import {useFetch} from '../../hooks/useFetch'
 
 export const FetchedPost = () => {
     let { postId } = useParams();
-    const [post, setPosts] = useState('')
+    const [post, setPosts] = useState([])
     const [comments, setComments] = useState([])
 
-    const fetchPosts = useCallback(async () => {
-        const data = await axios(`https://jsonplaceholder.typicode.com/posts/${postId}`);
-        setPosts(data.data);
-      }, [])
-      
-      useEffect(() => {
-        fetchPosts()
-      }, [])
+    const PostURL = `https://jsonplaceholder.typicode.com/posts/${postId}`
+    const CommentsURL = `https://jsonplaceholder.typicode.com/posts/${postId}/comments`
 
-      const fetchComments = useCallback(async () => {
-        const data = await axios(`https://jsonplaceholder.typicode.com/posts/${postId}/comments`);
-        console.log(data);
-        setComments(data.data);
-      }, [])
-      
-      useEffect(() => {
-        fetchComments()
-      }, [])
+    const fetchPostsData = useFetch(setPosts, PostURL);
+    const fetchCommentsData = useFetch(setComments, CommentsURL);
 
     return (
         <article>
