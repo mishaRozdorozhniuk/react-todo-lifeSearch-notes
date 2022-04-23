@@ -1,7 +1,6 @@
 import React, {useState} from 'react'
 import { useParams } from 'react-router-dom';
 import './FetchedPost.css'
-import PostServise from '../../API/PostServise'
 import {useFetch} from '../../hooks/useFetch'
 
 export const FetchedPost = () => {

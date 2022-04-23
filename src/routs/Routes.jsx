@@ -18,13 +18,13 @@ export const ReactRouters = () => {
             isAuth ? 
             <Routes>
               <Route path="/" element={ <App /> }/>
-              <Route exact="true" path="/fetch" element={ <FetchedPostsPage />} />
               <Route exact="true" path="/fetch/:postId" element={<FetchedPost /> } />
+              <Route exact="true" path="/fetch" element={ <FetchedPostsPage />} />
               <Route path="*" element={<Error to="/" replace />}/>
             </Routes> :
             <Routes>
               <Route path="/login" element={ <Login /> }/>
-              <Route path="*" element={<Login to="/login" replace /> } />
+              <Route path="*" element={<Login path="/login" replace /> } />
             </Routes>
           }
         </BrowserRouter>

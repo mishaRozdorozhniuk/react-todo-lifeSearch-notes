@@ -1,4 +1,3 @@
-import axios from 'axios'
 import React, {useState, useEffect} from 'react'
 import PostServise from '../../API/PostServise.js'
 import { getPageArray, getPages } from '../../utils/pages.js'

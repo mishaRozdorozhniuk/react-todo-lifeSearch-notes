@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import ReactDOM from 'react-dom';
 import { ReactRouters } from './routs/Routes';
+import ReactDOM from 'react-dom'
 import { AuthContext } from '../src/context/index';
 
 const Main = () => {
