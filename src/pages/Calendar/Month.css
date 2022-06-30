@@ -1,0 +1,8 @@
+.month {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    border: 1px solid rgba(255, 255, 255, 0.658);
+    background-color: rgb(26, 24, 41);
+    margin-bottom: 10px;
+}

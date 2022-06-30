@@ -1,0 +1,24 @@
+.note {
+    padding: 20px;
+}
+
+.note:hover,
+.delete-note:hover {
+    background-color: #ccc;
+}
+
+.delete-note {
+    background-color: transparent;
+    border: none;
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.active-note {
+    background-color: rgba(51, 142, 239, 0.641);
+}
+
+.active-note:hover {
+    background-color: rgba(51, 142, 239, 0.641);
+}

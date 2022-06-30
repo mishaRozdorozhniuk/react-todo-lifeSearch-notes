@@ -22,3 +22,11 @@
 .post p {
     background-color: rgba(136, 127, 127, 0.264);
 }
+
+.post-btn {
+    background-color: blue;
+    border: none;
+    color: #fff;
+    padding: 5px;
+    margin-top: 5px;
+}

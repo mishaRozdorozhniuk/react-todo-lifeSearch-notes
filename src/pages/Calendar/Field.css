@@ -1,0 +1,12 @@
+.field {
+    border: 1px solid rgb(97, 95, 95);
+    height: 100px;
+    padding: 10px;
+}
+
+.field-select {
+    margin-left: 30px;
+    background-color: rgb(26, 24, 41);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.817);
+}

@@ -1,0 +1,15 @@
+aside {
+    border: 1px solid gray;
+}
+
+.sidebar-title {
+    font-family: 'Lato', sans-serif;
+}
+
+.add-note-title {
+    background-color: #fff;
+    color: rgb(0, 106, 255);
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}

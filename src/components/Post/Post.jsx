@@ -10,7 +10,7 @@ export const Post = ({posts}) => {
             <span className="post-number">{posts.id}</span>
             <span>{posts.title}</span>
             <p>{posts.body}</p>
-            <button onClick={() => navigate(`/fetch/${posts.id}`)}>Читать пост</button>
+            <button className="post-btn" onClick={() => navigate(`/fetch/${posts.id}`)}>Читать пост</button>
         </div>
     )
 }

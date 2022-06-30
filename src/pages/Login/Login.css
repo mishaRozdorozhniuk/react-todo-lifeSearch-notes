@@ -8,3 +8,13 @@ form {
 h1 {
     text-align: center
 }
+
+.has-error {
+    border: 2px solid rgb(212, 3, 3);
+    border-radius: 5px;
+}
+
+.has-error:focus-visible {
+    border: 2px solid rgb(212, 3, 3);
+    border-radius: 5px;
+}
